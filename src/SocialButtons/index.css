@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bgContainer {
+    background-image: url("https://assets.ccbp.in/frontend/react-js/social-buttons-bg.png");
+    background-size: cover;
+    min-height: 50vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

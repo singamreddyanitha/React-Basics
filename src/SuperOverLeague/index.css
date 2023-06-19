@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+
+.container {
+    background-color: #0f172a;
+    background-size: cover;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.heading{
+    font-family: "Roboto";
+    font-size: 26px;
+    font-weight: bold;
+    color: #f8fafc;
+    
+}
+
+@media (max-width: 767px) {
+    .imgCard{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 768px) {
+    .imgCard{
+        width: 300px;
+        height: 300px;
+    }
+
+    .heading {
+        font-size: 60px;
+    }
+}
