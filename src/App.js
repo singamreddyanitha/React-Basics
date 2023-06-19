@@ -6,7 +6,11 @@ import './App.css';
 // import ClassComponent from './Components/classComponents';
 // import CounterUsingHook from "./Components/classComponents/CounterUsingHook"
 // import UsingIfElse from "./Components/ConditionalRendering/usingIfElse"
-import IfElseWithHook from "./Components/ConditionalRendering/IfElseWithHook";
+// import IfElseWithHook from "./Components/ConditionalRendering/IfElseWithHook";
+//  import ElementVariableUsingReact from "./Components/ConditionalRendering/ElementVariableUsingReact";
+// import UsingTernaryOperatorInReact from "./Components/ConditionalRendering/UsingTernaryOperatorInReact";
+import UsingLogicalOperatorInReact from "./Components/ConditionalRendering/UsingLogicalOperatorInReact";
+
 function App() {
   return (
     <div className="App">
@@ -19,7 +23,10 @@ function App() {
        {/* <ClassComponent /> */}
        {/* <CounterUsingHook/> */}
        {/* <UsingIfElse /> */}
-       <IfElseWithHook/>
+       {/* <IfElseWithHook/> */}
+       {/* <ElementVariableUsingReact /> */}
+       {/* <UsingTernaryOperatorInReact /> */}
+       <UsingLogicalOperatorInReact />
     </div>
   );
 }

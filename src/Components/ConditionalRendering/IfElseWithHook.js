@@ -10,9 +10,9 @@ const IfElseWithHook = () => {
 
     const renderAuthButton = () => {
         if(IsLoggedIn) {
-            return <button onClick = {toggleAuth}>LogIn</button>;
+            return <button onClick = {toggleAuth}>Logout</button>;
         }
-        return <button onClick={toggleAuth}>Logout</button>;
+        return <button onClick={toggleAuth}>Login</button>;
     }
   return (
     <div>
