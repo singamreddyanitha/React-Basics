@@ -5,7 +5,7 @@ import './App.css';
 // import SocialButtons from "./SocialButtons";
 // import ClassComponent from './Components/classComponents';
 // import CounterUsingHook from "./Components/classComponents/CounterUsingHook"
-// import UsingIfElse from "./Components/ConditionalRendering/usingIfElse"
+import UsingIfElse from "./Components/ConditionalRendering/usingIfElse"
 // import IfElseWithHook from "./Components/ConditionalRendering/IfElseWithHook";
 //  import ElementVariableUsingReact from "./Components/ConditionalRendering/ElementVariableUsingReact";
 // import UsingTernaryOperatorInReact from "./Components/ConditionalRendering/UsingTernaryOperatorInReact";
@@ -22,7 +22,7 @@ function App() {
        <SocialButtons like = "Like" comment = "Comment" share = "Share" /> */}
        {/* <ClassComponent /> */}
        {/* <CounterUsingHook/> */}
-       {/* <UsingIfElse /> */}
+       <UsingIfElse />
        {/* <IfElseWithHook/> */}
        {/* <ElementVariableUsingReact /> */}
        {/* <UsingTernaryOperatorInReact /> */}
