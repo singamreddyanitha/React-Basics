@@ -5,12 +5,13 @@ import './App.css';
 // import SocialButtons from "./SocialButtons";
 // import ClassComponent from './Components/classComponents';
 // import CounterUsingHook from "./Components/classComponents/CounterUsingHook"
-import UsingIfElse from "./Components/ConditionalRendering/usingIfElse"
+// import UsingIfElse from "./Components/ConditionalRendering/usingIfElse"
 // import IfElseWithHook from "./Components/ConditionalRendering/IfElseWithHook";
 //  import ElementVariableUsingReact from "./Components/ConditionalRendering/ElementVariableUsingReact";
 // import UsingTernaryOperatorInReact from "./Components/ConditionalRendering/UsingTernaryOperatorInReact";
-import UsingLogicalOperatorInReact from "./Components/ConditionalRendering/UsingLogicalOperatorInReact";
-
+// import UsingLogicalOperatorInReact from "./Components/ConditionalRendering/UsingLogicalOperatorInReact";
+// import WelcomeApp from "./Components/WelcomeApp/index";
+import LightDarkMode  from './Components/LightDarkMode/indexHook';
 function App() {
   return (
     <div className="App">
@@ -22,11 +23,13 @@ function App() {
        <SocialButtons like = "Like" comment = "Comment" share = "Share" /> */}
        {/* <ClassComponent /> */}
        {/* <CounterUsingHook/> */}
-       <UsingIfElse />
+       {/* <UsingIfElse /> */}
        {/* <IfElseWithHook/> */}
        {/* <ElementVariableUsingReact /> */}
        {/* <UsingTernaryOperatorInReact /> */}
-       <UsingLogicalOperatorInReact />
+       {/* <UsingLogicalOperatorInReact /> */}
+       {/* <WelcomeApp/> */}
+       <LightDarkMode />
     </div>
   );
 }
