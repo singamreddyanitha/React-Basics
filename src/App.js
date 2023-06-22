@@ -11,7 +11,10 @@ import './App.css';
 // import UsingTernaryOperatorInReact from "./Components/ConditionalRendering/UsingTernaryOperatorInReact";
 // import UsingLogicalOperatorInReact from "./Components/ConditionalRendering/UsingLogicalOperatorInReact";
 // import WelcomeApp from "./Components/WelcomeApp/index";
-import LightDarkMode  from './Components/LightDarkMode/indexHook';
+//  import LightDarkMode  from './Components/LightDarkMode/indexHook';
+// import SimpleUserInput from "./Components/SimpleUserInput/index";
+import PassingLists from "./Components/SampleUserLists/PassingLists/index";
+
 function App() {
   return (
     <div className="App">
@@ -29,7 +32,10 @@ function App() {
        {/* <UsingTernaryOperatorInReact /> */}
        {/* <UsingLogicalOperatorInReact /> */}
        {/* <WelcomeApp/> */}
-       <LightDarkMode />
+       {/* <LightDarkMode /> */} 
+       {/* <SimpleUserInput/> */}
+      <PassingLists/> 
+      
     </div>
   );
 }
