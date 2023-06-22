@@ -13,7 +13,7 @@ import './App.css';
 // import WelcomeApp from "./Components/WelcomeApp/index";
 //  import LightDarkMode  from './Components/LightDarkMode/indexHook';
 // import SimpleUserInput from "./Components/SimpleUserInput/index";
-import PassingLists from "./Components/SampleUserLists/PassingLists/index";
+import PassingLists from "./Components/SampleUserLists/PassingLists/indexHooks";
 
 function App() {
   return (
@@ -35,6 +35,7 @@ function App() {
        {/* <LightDarkMode /> */} 
        {/* <SimpleUserInput/> */}
       <PassingLists/> 
+      
       
     </div>
   );
