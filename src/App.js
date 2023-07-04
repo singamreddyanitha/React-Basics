@@ -1,16 +1,33 @@
-import ShowClock from "./Components/ComponentsLifeCycle/ClockUsingClassComponents/ShowClock"
-// import MainPage  from "./ComponentsLifeCycle/FunctionalComponentsUsingHooks/Clock/MainPage";
-import './App.css';
+import React from "react"
 
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      {/* <h1>Hello World!</h1> */}
-      <ShowClock/>
-      {/* <MainPage/> */}
-    </div>
-  ) 
-}
+import Header from "./Components/ReactRouter/Header";
+import About from "./Components/ReactRouter/About";
+import Contact from "./Components/ReactRouter/Contact";
+import Home from "./Components/ReactRouter/Home";
+import NotFound from "./Components/ReactRouter/NotFound"; 
+
+import "./App.css"
+
+const App = () => (
+  <Router>
+    <Header />
+    <Routes>
+
+      {/* <Home/>
+      <About/>
+      <Contact/> */}
+     
+       <Route exact path = "/"  element = {<Home />} />
+      <Route  exact path = "/about"  element = {<About/>} />
+      <Route  exact path = "/contact"  element = {<Contact/>} /> 
+      <Route path = "*" element = {<NotFound/>} />
+
+      {/* <Route path = "*" element = {<Navigate to = "/about" />} /> */}
+      
+    </Routes>
+  </Router>
+);
 
 export default App;
