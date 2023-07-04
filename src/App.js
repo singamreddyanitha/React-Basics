@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from "./Components/ReactRouter/Header";
 import About from "./Components/ReactRouter/About";
 import Contact from "./Components/ReactRouter/Contact";
-import Home from "./Components/ReactRouter/Home";
+// import Home from "./Components/ReactRouter/Home";
+import BlogsList from "./Components/ReactRouter/BlogsList/indexHook"
 import NotFound from "./Components/ReactRouter/NotFound"; 
 
 import "./App.css"
@@ -19,7 +20,8 @@ const App = () => (
       <About/>
       <Contact/> */}
      
-       <Route exact path = "/"  element = {<Home />} />
+     {/* <Route exact path = "/" element = {<Home />} /> */}
+       <Route exact path = "/"  element = {<BlogsList />} />
       <Route  exact path = "/about"  element = {<About/>} />
       <Route  exact path = "/contact"  element = {<Contact/>} /> 
       <Route path = "*" element = {<NotFound/>} />
