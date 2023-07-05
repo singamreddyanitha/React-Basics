@@ -6,8 +6,9 @@ import Header from "./Components/ReactRouter/Header";
 import About from "./Components/ReactRouter/About";
 import Contact from "./Components/ReactRouter/Contact";
 // import Home from "./Components/ReactRouter/Home";
-import BlogsList from "./Components/ReactRouter/BlogsList/indexHook"
+import BlogsList from "./Components/ReactRouter/BlogsList/index"
 import NotFound from "./Components/ReactRouter/NotFound"; 
+import BlogItemDetails from "./Components/ReactRouter/BlogItemDetails/index.js";
 
 import "./App.css"
 
@@ -24,6 +25,7 @@ const App = () => (
        <Route exact path = "/"  element = {<BlogsList />} />
       <Route  exact path = "/about"  element = {<About/>} />
       <Route  exact path = "/contact"  element = {<Contact/>} /> 
+      <Route path = "/blogs/:id" element = {<BlogItemDetails/>} />
       <Route path = "*" element = {<NotFound/>} />
 
       {/* <Route path = "*" element = {<Navigate to = "/about" />} /> */}
