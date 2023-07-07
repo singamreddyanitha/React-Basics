@@ -28,6 +28,7 @@ const BlogItemDetails = () => {
     }, [id]);
 
     const getBlogData =  async () => {
+      
         console.log(id)
     //    console.log(match);
 
