@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
-import {useNavigate, useLocation} from "react-router-dom"
+import {useNavigate, useLocation, Navigate} from "react-router-dom"
+import Cookies from "js-cookie"
+
 
 
 const LoginForm = () => {
@@ -14,10 +16,10 @@ const LoginForm = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const onGetSuccess = () => {
+    const onGetSuccess = (jwtToken) => {
         
         // method: 1 => history.push("/")
-         navigate("/") // In place of this.props , we are using navigate method to get history.push("/") method...
+        //  navigate("/") // In place of this.props , we are using navigate method to get history.push("/") method...
 
      // method: 1 => history.replace("/")
     //    navigate("/", {replace: true}) // instead of history.replace we are using this navigate method....
@@ -25,7 +27,18 @@ const LoginForm = () => {
 
     // method:2 => history.replace("/")
        const currentLocation = location.pathname 
-       navigate(currentLocation, {replace: true})
+       console.log(currentLocation)
+    //    navigate(currentLocation,  {replace: true})
+       navigate("/", {replace: true})
+
+       console.log(jwtToken)
+       Cookies.set("jwt_token", jwtToken, {expires: 1})
+
+    }
+
+    const jwtToken = Cookies.get("jwt_token")
+    if(jwtToken !== undefined) {
+        return <Navigate to = "/"/>
     }
 
     const onGetFailure = (errorMsg) => {
@@ -51,7 +64,7 @@ const LoginForm = () => {
         console.log(data)
 
         if(response.ok === true) {
-            onGetSuccess()
+            onGetSuccess(data.jwt_token)
         }
 
         else {
