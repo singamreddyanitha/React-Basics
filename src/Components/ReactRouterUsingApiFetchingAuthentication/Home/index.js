@@ -1,13 +1,9 @@
-import {Navigate} from "react-router-dom" // Inplace of Redirect method using Navigate 
-import Cookies from "js-cookie"
+
 
 import Header from '../Header/index'
 
 const Home = () => {
-  const jwtToken = Cookies.get("jwt_token")
-  if(jwtToken === undefined) {
-    return <Navigate to = "/login"/>
-  }
+  
 
   return (
   <div>
