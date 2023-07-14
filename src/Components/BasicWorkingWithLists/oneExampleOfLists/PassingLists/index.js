@@ -1,3 +1,7 @@
+//main Aim to create this page is =>  to destract the lists and pass each data to another component
+
+
+
 import React from 'react'
 import EachItemList from '../EachItemList'
 

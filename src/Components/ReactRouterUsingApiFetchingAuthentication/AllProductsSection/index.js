@@ -14,7 +14,7 @@ const AllProductsSection = () => {
 
     useEffect(() => {
         getProducts()
-    })
+    }, [])
 
     const getProducts = async () => {
         const jwtToken = Cookies.get("jwt_token")
@@ -30,7 +30,7 @@ const AllProductsSection = () => {
         const response = await fetch(url, options)
         // console.log(response)
         const fetchedData = await response.json()
-        console.log(fetchedData)
+        // console.log(fetchedData)
 
         const updatedData = fetchedData.products.map((product) => ({
             brand: product.brand,

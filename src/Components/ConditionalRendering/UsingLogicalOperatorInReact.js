@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class UsingLogicalOperatorInReact extends Component {
+class UsingLogicalOperatorInReacts extends Component {
     state = {isloggedIn: true} // change islogged: false => then in browser will get output showing difference
 
   render() {
@@ -15,4 +15,4 @@ class UsingLogicalOperatorInReact extends Component {
   }
 }
 
-export default UsingLogicalOperatorInReact
+export default UsingLogicalOperatorInReacts

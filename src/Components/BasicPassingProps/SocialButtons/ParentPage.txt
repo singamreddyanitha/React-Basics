@@ -1,0 +1,12 @@
+import SocialButtons from "./Components/SocialButtons"
+
+
+function App(){
+    return (
+        <>
+        <SocialButtons like = "Like" comment = "Comment" share = "Share" />
+        </>
+    )
+}
+
+export default App

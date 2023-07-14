@@ -1,0 +1,12 @@
+import PassingLists from "./Components/PassingListsExamples/PassingLists"
+
+
+function App() {
+    return (
+        <>
+        <PassingLists />
+        </>
+    )
+}
+
+export default App

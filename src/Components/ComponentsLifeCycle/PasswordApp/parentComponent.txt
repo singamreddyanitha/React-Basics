@@ -1,0 +1,12 @@
+import Components from  "./Components/PasswordApp/index"
+
+function App () {
+    return (
+        <>
+        <Components />
+        </>
+
+    )
+}
+
+export default App

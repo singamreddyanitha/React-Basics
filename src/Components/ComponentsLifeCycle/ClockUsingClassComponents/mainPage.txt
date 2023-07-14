@@ -1,0 +1,12 @@
+import ShowClock from "./Components/ClockUsingClassComponents/ShowClock 
+
+function App () {
+    return (
+        <>
+        <ShowClock />
+        </>
+
+    )
+}
+
+export default App

@@ -1,0 +1,11 @@
+import Sample from "./Components/BasicPassingProps" 
+
+function App () {
+    return (
+        <>
+         <Sample name = "Anitha" age = "28"/> 
+        </>
+    )
+}
+
+export default App

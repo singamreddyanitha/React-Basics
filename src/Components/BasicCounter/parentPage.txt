@@ -1,0 +1,12 @@
+import Counter from "./Components/BasicCounter" 
+
+
+function App () {
+    return (
+        <>
+            <Counter counterValue = "10" /> 
+         </>
+    )
+}
+
+export default App

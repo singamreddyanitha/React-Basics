@@ -1,0 +1,11 @@
+ import RandomNumberGenerator from "./Components/RandomGeneratorUsingHooks" 
+
+ function App() {
+    return (
+        <>
+        <RandomNumberGenerator/>
+        </>
+    )
+ }
+
+ export default App

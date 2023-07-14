@@ -1,0 +1,11 @@
+import SuperLeague from './Components/SuperOverLeague';
+
+function App() {
+    return(
+        <>
+        <SuperLeague/>
+        </>
+    )
+}
+
+export default App
