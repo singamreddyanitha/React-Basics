@@ -6,6 +6,7 @@ import NotFound from "../NotFound";
 import Products from "../Products";
 import Cart from "../Cart";
 import ProtectedRoute from "../ProtectedRoute";
+import ProductItemDetails from "../ProductItemDetails"
 
 
 const ParentComponent = () => (
@@ -16,8 +17,9 @@ const ParentComponent = () => (
         <Route exact path="/" element={<Home />} />
         <Route exact path ="/products" element = {<Products />} /> 
         <Route exact path = "/cart" element = {<Cart />} />
+        <Route exact path = "/products/:id" element = {<ProductItemDetails />} />   
       </Route>
-     
+      
       <Route path = "/not-found" element = {<NotFound/>} />
       <Route path="*" element={<NotFound />} /> 
     </Routes>

@@ -1,0 +1,3 @@
+The children is a special prop that is automatically passed to every React Component.
+
+The JSX Element/Text included in between the opening and closing tags are considered children.
